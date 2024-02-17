@@ -1,0 +1,448 @@
+* {
+  margin:0;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* NavBarBeforeLogin Styles */
+
+.NavBarBeforeLogin {
+  display: flex;
+  flex-direction: row;
+  flex:1;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #20232A;
+  min-height: 60px;
+  color: white;
+}
+.NavBarBeforeLogin .title {
+  display: flex;
+  margin-left: 20px;
+  margin-left: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.NavBarBeforeLogin h2 {
+  font-size: 30px;
+  font-weight: 200;
+  color: #C7B8A0;
+}
+ .login, .signup {
+  color: #C7B8A0;
+  font-size: 20px;
+  margin-left: 30px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.NavBarBeforeLogin .login:hover,.NavBarBeforeLogin .signup:hover {
+  color: white;
+} 
+.NavBarBeforeLogin .buttons-container {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  margin-right: 30px;
+}
+.NavBarBeforeLogin .messaging-icon {
+  margin-right: 10px;
+  align-self: center;
+}
+
+/* login-form styles */
+.login-container {
+  margin: 100px auto;
+  border: 1px solid #CCCCCC;
+  width: 300px;
+  height: 300px;
+}
+.login-form {
+  margin: 50px auto;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.login-container h2 {
+  font-weight: 300;
+  font-size: 30px;
+  margin-right: 200px;
+  margin-bottom: 4px;
+}
+.login-container .submit {
+  border-radius: 10px;
+  background-color: #20232A;
+  color: white;
+  font-size: 14px;
+  padding: 8px 22px;
+  font-weight: 10;
+  margin-top: 22px;
+  cursor: pointer;
+}
+
+/* signup-container styles */
+.signup-container {
+  margin: 100px auto;
+  border: 1px solid #CCCCCC;
+  width: 300px;
+  height: 400px;
+}
+.signup-form {
+  margin: 50px auto;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.signup-container h2 {
+  font-weight: 300;
+  font-size: 30px;
+  margin-right: 190px;
+  margin-bottom: 4px;
+}
+.signup-container .submit {
+  border-radius: 10px;
+  background-color: #20232A;
+  color: white;
+  font-size: 14px;
+  padding: 8px 22px;
+  font-weight: 10;
+  margin-top: 22px;
+  cursor: pointer;
+}
+.success-status {
+  margin-bottom: 200px;
+  font-size: 20px;
+  font-weight: 100;
+  color: rgb(6, 182, 6);
+}
+
+/* Home Styles */
+.Home {
+  display: flex;
+  flex: 1;
+  height: 661px;     
+  flex-direction: row;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+.friends {
+  flex: 1;
+  height: 100%;
+  border-right: 1px solid #CCCCCC;
+}
+.conversation {
+  flex: 3;
+  height: 100%;
+  border-right: 1px solid #CCCCCC;
+}
+.online-friends {
+  flex: 1;
+  height: 100%;
+}
+.online-friends-title {
+  display: flex;
+  align-items:  center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 100;
+}
+/* friend styles */
+.friend {
+  min-height: 50px;
+  display: flex;
+  border-bottom: 1px solid #CCCCCC;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 100;
+}
+.friend:active {
+  background-color: black;
+  color: white;
+}
+.friend:hover {
+  background-color: grey;
+}
+/* conversation styles */
+.conversation-container {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  flex-direction: column;
+}
+.friend-name {
+  display: flex;
+  align-items:  center;
+  padding-left: 20px;
+  height: 50px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 100;
+  /* background-color: #EDEDED; */
+} 
+.friend-name-title {
+  text-decoration: none;
+  color: black;
+}
+.friend-name-title:hover {
+  text-decoration: underline;
+  color: grey;
+}
+.Conversations {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.message {
+  max-width: 300px;
+  word-wrap: break-word;
+}
+.messageByUser {
+  align-self: flex-end;
+  background-color: #20232A;
+  color: #C7B8A0;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+  max-width: 300px;
+  font-size: 13px;
+}
+.messageByFriend {
+  align-self: flex-start;
+  background-color: #F4F5DF;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+  max-width: 300px;
+  font-size: 13px;
+}
+.no-conversation-selected {
+  font-size: 50px;
+  color: grey;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+}
+/* Message-Box Styles */
+.Message-Box {
+  display: flex;
+  align-items: center;
+  background-color: #EDEDED;
+  height: 80px;
+}
+.typing-box {
+  width: 800px;
+  height: 60px;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 10px 0 10px;
+}
+.send-button {
+  border-radius: 20px;
+  background-color: #20232A;
+  color: white;
+  font-size: 14px;
+  padding: 4px 18px;
+  font-weight: 10;
+  cursor: pointer;
+}
+.send-button:active {
+  border-radius: 20px;
+  background-color: #20232A;
+  color: grey;
+  font-size: 14px;
+  padding: 4px 18px;
+  font-weight: 10;
+  cursor: pointer;
+}
+/* Connect Styles */
+.connect-body {
+  display: flex;
+  height: 1000px;
+  background-color: #F3F2EF;
+  justify-content: center;
+}
+.connect-container {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  height: 600px;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 25px;
+  justify-content: center;
+  border: 0.5px solid rgb(168, 168, 168);
+}
+.search-box-container {
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 70%;
+  height: 30px;
+  align-self: center;
+}
+.search-friends {
+  border-width: 0.5px;
+  border-color: grey;
+  width: 100%;
+  border-radius: 30px;
+  height: 20px;
+  padding: 10px;
+  border-style: solid;
+  padding-left: 20px;
+  font-size: 14px;
+}
+input.search-friends:focus {
+  outline-width:0;
+}
+.connections-list-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.filter-options-dropdown {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  /* width: 150px; */
+  font-size: 14px;
+  align-self: flex-end;
+  margin-top: 20px;
+  margin-right: 10px;
+  width: 100%;
+  justify-content: space-between;
+  /* margin-left: 200px; */
+}
+.pending-requests-text {
+  margin-left: 350px;
+  font-size: 30px;
+  font-weight: 100;
+  height: 33px;
+  border-bottom: 1px solid grey;
+}
+/* ShowConnections styles */
+.no-users-found {
+  font-size: 50px;
+  font-weight: 100;
+  color: grey;
+  margin-top: 150px;
+}
+.show-connections-container {
+  height: 460px;
+  margin-top: 50px;
+  border-top: 1px solid rgb(179, 177, 177);
+}
+.show-connections {
+  height: 100%;
+  overflow-y: auto;
+  width: 100%;
+}
+/* ConnectionView styles */
+.connection-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items:center;
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid rgb(179, 177, 177);
+}
+.connection-name {
+  width: 150px;
+  font-weight: 150;
+  max-width: 150px;
+  font-size: 18px;
+  margin-right: 100px;
+  /* next 3 lines for showing only limited text and remaining as dots */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.status-button {
+  height: 30px;
+  width: 80px;
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+.status-button-accept {
+  color: #C7B8A0;
+  background-color: #20232A;
+}
+.status-button-accept:hover {
+  color: white;
+}
+
+.user-details-link {
+  text-decoration: none;
+  color: black;
+}
+.user-details-link:hover {
+  text-decoration: underline;
+}
+/* user-details styles */
+.user-details-username {
+  font-weight: 100;
+  align-self: flex-start;
+  margin-left: 20px;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.user-details-small-container {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 100;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.user-details-mutual-friends {
+  margin-right: 40px;
+}
+.user-details-friends-types {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 100%;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 0px;
+}
+.user-details-friend-button {
+  width: 50%;
+  height: 100%;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+.user-details-button-on {
+  background-color: black;
+  color:#C7B8A0;
+}
+.user-details-button-off {
+  background-color: white;
+  color: rgb(56, 56, 56);
+}
